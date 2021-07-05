@@ -1,0 +1,19 @@
+$icon-dimensions: ('sm': 12, '': 23, 'lg': 32, 'xl': 56, 'xxl': 129);
+
+@each $name, $value in $icon-dimensions {
+    .icon#{if($name != '', '-' + $name, '') } {
+        width: #{$value + 'px'};
+        height: #{$value + 'px'};
+
+        i, .svg-font {
+            width: #{$value + 'px'};
+            height: #{$value + 'px'};
+        }
+    }
+}
+
+.icon, .icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
