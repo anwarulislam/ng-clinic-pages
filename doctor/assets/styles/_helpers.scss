@@ -1,0 +1,19 @@
+@import "helpers/clearfix";
+@import "helpers/colored-links";
+@import "helpers/ratio";
+@import "helpers/position";
+@import "helpers/visually-hidden";
+@import "helpers/stretched-link";
+@import "helpers/text-truncation";
+
+.font-family-monteserrat {
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+.text-small {
+    font-size: $font-size-sm!important;
+}
+
+.border-rounded {
+    border-radius: 10px;
+}

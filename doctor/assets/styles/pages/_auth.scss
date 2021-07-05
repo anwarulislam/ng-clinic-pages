@@ -1,0 +1,63 @@
+.bg-auth {
+    background: url("/assets/images/bg-bubble.png") no-repeat center/cover;
+    min-height: 100vh;
+}
+
+.auth-card {
+    z-index: 1;
+}
+
+.auth-section {
+    position: relative;
+
+    @media (min-width: $md) {
+        width: 550px;
+    }
+}
+
+.login-empty-field-indicator, .error-field-indicator {
+    display: none;
+    position: absolute;
+    
+    @media (min-width: $md) {
+        display: block;
+    }
+}
+
+.login-empty-field-indicator {
+    top: 0;
+    left: -8rem;
+    z-index: 2;
+}
+
+.error-field-indicator {
+    z-index: 0;
+    top: 10rem;
+    left: -12rem;
+}
+
+.error-field-indicator ~ .auth-card {
+    @media (min-width: $md) {
+        margin: 5rem 0 10rem;
+    }
+}
+
+.auth-success-card {
+    height: 70vh;
+
+    @media (min-width: $md) {
+        height: 60vh;
+    }
+}
+
+.password-toggle {
+    position: absolute;
+    right: $input-btn-padding-x;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+
+    .svg-font {
+        color: $gray-600;
+    }
+}
